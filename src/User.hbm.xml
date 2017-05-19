@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.jwen.hib.user.User" table="DM_GY_RY">
+      <meta attribute="class-description">
+         This class contains the user detail. 
+      </meta>
+      <id name="id" type="string" column="id"></id>
+      <property name="userName" column="ryxm" type="string"/>
+      <property name="userIdCard" column="sfzjhm" type="string"/>
+      <property name="userAccountName" column="yhm" type="string"/>
+   </class>
+</hibernate-mapping>
